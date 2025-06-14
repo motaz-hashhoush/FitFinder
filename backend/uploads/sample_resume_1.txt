@@ -1,0 +1,50 @@
+John Smith
+Software Developer
+
+Contact Information:
+Email: john.smith@email.com
+Phone: (555) 123-4567
+Location: New York, NY
+
+Professional Summary:
+Experienced software developer with 5 years of experience in web development, 
+specializing in JavaScript, React, and Node.js. Proven track record of delivering 
+high-quality software solutions and working effectively in agile teams.
+
+Experience:
+Senior Software Developer | TechCorp (2020-Present)
+- Developed and maintained React-based web applications
+- Collaborated with cross-functional teams to deliver projects on time
+- Implemented responsive designs and optimized application performance
+- Mentored junior developers and conducted code reviews
+
+Software Developer | StartupXYZ (2019-2020)
+- Built RESTful APIs using Node.js and Express
+- Worked with MySQL and MongoDB databases
+- Participated in agile development processes
+- Contributed to architecture decisions and technical planning
+
+Education:
+Bachelor of Science in Computer Science
+University of Technology (2015-2019)
+
+Skills:
+- Programming Languages: JavaScript, Python, Java, TypeScript
+- Frontend: React, HTML5, CSS3, Vue.js
+- Backend: Node.js, Express, Django
+- Databases: MySQL, MongoDB, PostgreSQL
+- Tools: Git, Docker, AWS, Jenkins
+- Methodologies: Agile, Scrum, TDD
+
+Projects:
+- E-commerce Platform: Built a full-stack e-commerce solution using React and Node.js
+- Task Management App: Developed a real-time task management application
+- API Gateway: Designed and implemented a microservices API gateway
+
+Certifications:
+- AWS Certified Developer
+- React Developer Certification
+
+Languages:
+- English (Native)
+- Spanish (Conversational) 

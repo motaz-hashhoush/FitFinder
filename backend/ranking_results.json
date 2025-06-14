@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "timestamp": "2025-06-14T04:29:52.504213",
+    "total_resumes": 10,
+    "ranking_system_version": "2.0",
+    "processing_summary": {
+      "total_resumes": 10,
+      "average_score": 0.22019329919291933,
+      "median_score": 0.16844112088259205,
+      "std_score": 0.0868072726850354,
+      "min_score": 0.1542848487972813,
+      "max_score": 0.3549237761002482,
+      "average_match_percentage": 22.019329919291927,
+      "top_10_percent_threshold": 0.352960100255019,
+      "sectors_represented": 1,
+      "sector_distribution": {
+        "General": 10
+      }
+    }
+  },
+  "job_analysis": {
+    "sector_detected": "MARKETING",
+    "experience_required": 4,
+    "education_required": 3,
+    "complexity_score": 0.27,
+    "key_requirements": [],
+    "skills_breakdown": {
+      "DIGITAL-MEDIA": 2,
+      "MARKETING": 4,
+      "PHARMACEUTICAL": 1,
+      "PUBLIC-RELATIONS": 1
+    }
+  },
+  "rankings": [
+    {
+      "filename": "Motaz Hashhoush CV.pdf",
+      "sector": "General",
+      "combined_score": 0.3549237761002482,
+      "text_similarity": 0.04974592033416054,
+      "skill_score": 0.0,
+      "experience_score": 0.95,
+      "education_score": 1.0,
+      "experience_years": 6,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 35.492377610024825,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc"
+      ],
+      "file_path": "uploads\\Motaz Hashhoush CV.pdf"
+    },
+    {
+      "filename": "Motaz Hashhoush CV 0822.pdf",
+      "sector": "General",
+      "combined_score": 0.35274191404999355,
+      "text_similarity": 0.042473046833311684,
+      "skill_score": 0.0,
+      "experience_score": 0.95,
+      "education_score": 1.0,
+      "experience_years": 6,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 35.27419140499936,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc"
+      ],
+      "file_path": "uploads\\Motaz Hashhoush CV 0822.pdf"
+    },
+    {
+      "filename": "Motaz Hashhoush CV 06_23.pdf",
+      "sector": "General",
+      "combined_score": 0.3495984772334473,
+      "text_similarity": 0.0319949241114908,
+      "skill_score": 0.0,
+      "experience_score": 0.95,
+      "education_score": 1.0,
+      "experience_years": 6,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 34.95984772334473,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc"
+      ],
+      "file_path": "uploads\\Motaz Hashhoush CV 06_23.pdf"
+    },
+    {
+      "filename": "Motaz_Hashhoush_Resume 1_25.pdf",
+      "sector": "General",
+      "combined_score": 0.17664297365636142,
+      "text_similarity": 0.08880991218787132,
+      "skill_score": 0.0,
+      "experience_score": 0.0,
+      "education_score": 1.0,
+      "experience_years": 0,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 17.66429736563614,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc",
+        "Gain 4 more years of relevant experience"
+      ],
+      "file_path": "uploads\\Motaz_Hashhoush_Resume 1_25.pdf"
+    },
+    {
+      "filename": "Motaz Hashhoush CV 07_27_23 Data Engineer.pdf",
+      "sector": "General",
+      "combined_score": 0.1722714543227962,
+      "text_similarity": 0.07423818107598726,
+      "skill_score": 0.0,
+      "experience_score": 0.0,
+      "education_score": 1.0,
+      "experience_years": 0,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 17.22714543227962,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc",
+        "Gain 4 more years of relevant experience"
+      ],
+      "file_path": "uploads\\Motaz Hashhoush CV 07_27_23 Data Engineer.pdf"
+    },
+    {
+      "filename": "Motaz_Hashhoush_Resume.pdf",
+      "sector": "General",
+      "combined_score": 0.1646107874423879,
+      "text_similarity": 0.048702624807959616,
+      "skill_score": 0.0,
+      "experience_score": 0.0,
+      "education_score": 1.0,
+      "experience_years": 0,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 16.46107874423879,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc",
+        "Gain 4 more years of relevant experience"
+      ],
+      "file_path": "uploads\\Motaz_Hashhoush_Resume.pdf"
+    },
+    {
+      "filename": "Motaz Hashhoush CV 08_24_23 Data Science.pdf",
+      "sector": "General",
+      "combined_score": 0.1613422169535005,
+      "text_similarity": 0.037807389845001635,
+      "skill_score": 0.0,
+      "experience_score": 0.0,
+      "education_score": 1.0,
+      "experience_years": 0,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 16.13422169535005,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc",
+        "Gain 4 more years of relevant experience"
+      ],
+      "file_path": "uploads\\Motaz Hashhoush CV 08_24_23 Data Science.pdf"
+    },
+    {
+      "filename": "Motaz Hashhoush CV 06_26_23 Data Build Specialist.pdf",
+      "sector": "General",
+      "combined_score": 0.1586803296844574,
+      "text_similarity": 0.028934432281524536,
+      "skill_score": 0.0,
+      "experience_score": 0.0,
+      "education_score": 1.0,
+      "experience_years": 0,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 15.868032968445739,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc",
+        "Gain 4 more years of relevant experience"
+      ],
+      "file_path": "uploads\\Motaz Hashhoush CV 06_26_23 Data Build Specialist.pdf"
+    },
+    {
+      "filename": "Motaz Hashhoush CV 07_5_23 IN3 Computer Vision.pdf",
+      "sector": "General",
+      "combined_score": 0.15683621368871917,
+      "text_similarity": 0.022787378962397176,
+      "skill_score": 0.0,
+      "experience_score": 0.0,
+      "education_score": 1.0,
+      "experience_years": 0,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 15.683621368871917,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc",
+        "Gain 4 more years of relevant experience"
+      ],
+      "file_path": "uploads\\Motaz Hashhoush CV 07_5_23 IN3 Computer Vision.pdf"
+    },
+    {
+      "filename": "Motaz Hashhoush CV 9_11_23.pdf",
+      "sector": "General",
+      "combined_score": 0.1542848487972813,
+      "text_similarity": 0.014282829324270954,
+      "skill_score": 0.0,
+      "experience_score": 0.0,
+      "education_score": 1.0,
+      "experience_years": 0,
+      "education_level": 3,
+      "skills_found": {},
+      "match_percentage": 15.42848487972813,
+      "recommendations": [
+        "Consider developing skills in: seo, analytics, digital marketing, seo, ppc",
+        "Gain 4 more years of relevant experience"
+      ],
+      "file_path": "uploads\\Motaz Hashhoush CV 9_11_23.pdf"
+    }
+  ],
+  "summary_statistics": {
+    "total_resumes": 10,
+    "average_score": 0.22019329919291933,
+    "median_score": 0.16844112088259205,
+    "std_score": 0.0868072726850354,
+    "min_score": 0.1542848487972813,
+    "max_score": 0.3549237761002482,
+    "average_match_percentage": 22.019329919291927,
+    "top_10_percent_threshold": 0.352960100255019,
+    "sectors_represented": 1,
+    "sector_distribution": {
+      "General": 10
+    }
+  }
+}
