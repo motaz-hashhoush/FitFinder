@@ -2,117 +2,146 @@
 
 :root {
   --background: hsl(210, 40%, 98%);
-  --foreground: hsl(210, 40%, 10%);
+  --foreground: hsl(210, 40%, 15%);
+
   --muted: hsl(210, 40%, 95%);
-  --muted-foreground: hsl(210, 25%, 45%);
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(210, 40%, 10%);
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(210, 40%, 10%);
+  --muted-foreground: hsl(210, 25%, 50%);
+
+  --popover: hsl(210, 40%, 100%);
+  --popover-foreground: hsl(210, 40%, 15%);
+
+  --card: hsl(210, 40%, 99%);
+  --card-foreground: hsl(210, 40%, 15%);
+
   --border: hsl(210, 40%, 88%);
   --input: hsl(210, 40%, 92%);
-  --primary: hsl(210, 85%, 35%);
+
+  --primary: hsl(210, 85%, 45%);
   --primary-foreground: hsl(0, 0%, 100%);
+
   --secondary: hsl(210, 60%, 90%);
-  --secondary-foreground: hsl(210, 40%, 15%);
-  --accent: hsl(210, 80%, 60%);
-  --accent-foreground: hsl(0, 0%, 100%);
-  --destructive: hsl(0, 84.2%, 60.2%);
-  --destructive-foreground: hsl(60, 9.1%, 97.8%);
-  --ring: hsl(210, 85%, 35%);
+  --secondary-foreground: hsl(210, 40%, 20%);
+
+  --accent: hsl(210, 80%, 65%);
+  --accent-foreground: hsl(210, 30%, 10%);
+
+  --destructive: hsl(210, 100%, 25%);
+  --destructive-foreground: hsl(210, 100%, 98%);
+
+  --ring: hsl(210, 85%, 45%);
   --radius: 0.5rem;
 }
 
 .dark {
   --background: hsl(210, 50%, 6%);
   --foreground: hsl(210, 40%, 95%);
+
   --muted: hsl(210, 40%, 12%);
   --muted-foreground: hsl(210, 25%, 65%);
+
   --popover: hsl(210, 50%, 8%);
   --popover-foreground: hsl(210, 40%, 95%);
+
   --card: hsl(210, 50%, 8%);
   --card-foreground: hsl(210, 40%, 95%);
+
   --border: hsl(210, 40%, 18%);
   --input: hsl(210, 40%, 16%);
+
   --primary: hsl(210, 80%, 60%);
   --primary-foreground: hsl(210, 50%, 6%);
+
   --secondary: hsl(210, 40%, 15%);
   --secondary-foreground: hsl(210, 40%, 90%);
+
   --accent: hsl(210, 80%, 65%);
   --accent-foreground: hsl(210, 50%, 6%);
-  --destructive: hsl(0, 62.8%, 50%);
+
+  --destructive: hsl(210, 100%, 25%);
   --destructive-foreground: hsl(0, 0%, 98%);
+
   --ring: hsl(210, 80%, 60%);
   --radius: 0.5rem;
 }
 
 * {
-  border-color: hsl(var(--border) / 1);
+  border-color: var(--border);
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #F5F0CD 0%, #FADA7A 100%);
-  color: #3674B5;
+  background: linear-gradient(
+    135deg,
+    hsl(210, 40%, 98%) 0%,
+    hsl(210, 40%, 95%) 100%
+  );
+  color: var(--foreground);
   min-height: 100vh;
 }
 
-/* Custom animations and styles for the resume ranking system */
+/* -------------------------- */
+/* Custom styles and utility */
+/* -------------------------- */
+
 .candidate-rank-1 {
-  background-color: rgb(220 252 231);
-  color: rgb(22 163 74);
+  background-color: hsl(210, 60%, 90%);
+  color: hsl(210, 100%, 30%);
 }
 
 .candidate-rank-2 {
-  background-color: rgb(219 234 254);
-  color: rgb(37 99 235);
+  background-color: hsl(210, 70%, 95%);
+  color: hsl(210, 80%, 40%);
 }
 
 .candidate-rank-3 {
-  background-color: rgb(254 243 199);
-  color: rgb(217 119 6);
+  background-color: hsl(210, 80%, 98%);
+  color: hsl(210, 60%, 50%);
 }
 
 .score-excellent {
-  color: rgb(22 163 74);
+  color: hsl(210, 100%, 35%);
 }
 
 .score-good {
-  color: rgb(37 99 235);
+  color: hsl(210, 90%, 50%);
 }
 
 .score-fair {
-  color: rgb(217 119 6);
+  color: hsl(210, 70%, 65%);
 }
 
 .score-poor {
-  color: rgb(220 38 38);
+  color: hsl(210, 60%, 75%);
 }
 
-/* Progress bar customizations */
+/* Progress bar animation */
 .progress-bar {
   transition: width 0.5s ease-in-out;
 }
 
-/* Drag and drop upload zone styling */
+/* Upload zone styling */
 .upload-zone {
   transition: all 0.2s ease-in-out;
+  border: 2px dashed var(--ring);
+  background-color: var(--muted);
+  padding: 1rem;
+  border-radius: var(--radius);
 }
 
 .upload-zone:hover {
-  border-color: hsl(210, 85%, 35% / 0.4);
-  background-color: hsl(210, 85%, 35% / 0.05);
+  border-color: hsl(210, 85%, 45%, 0.4);
+  background-color: hsl(210, 85%, 45%, 0.05);
 }
 
 .upload-zone.drag-active {
-  border-color: hsl(210, 85%, 35%);
-  background-color: hsl(210, 85%, 35% / 0.1);
+  border-color: var(--ring);
+  background-color: hsl(210, 85%, 45%, 0.1);
 }
 
-/* Loading spinner for analysis */
+/* Spinner animation */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -126,7 +155,7 @@ body {
   animation: spin 1s linear infinite;
 }
 
-/* Smooth collapsible animations */
+/* Collapsible animation */
 .collapsible-content {
   transition: all 0.3s ease-in-out;
 }
