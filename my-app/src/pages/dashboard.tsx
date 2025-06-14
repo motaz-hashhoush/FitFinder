@@ -6,11 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
-import { Bell, WandSparkles } from "lucide-react";
+import { Bell, WandSparkles, Rocket } from "lucide-react";
 import { resumeApi, AnalysisResponse } from "@/lib/api";
-import logoPath from "../../../attached_assets/Logo.jpg"; // Adjust the path as necessary
 import { Link } from "wouter";
-import { Rocket, Shield, Zap, Users, ArrowRight } from "lucide-react";
 
 export default function Dashboard() {
   const [jobDescription, setJobDescription] = useState("");
@@ -18,17 +16,15 @@ export default function Dashboard() {
     useState<AnalysisResponse | null>(null);
   const { toast } = useToast();
 
-  // Analyze resumes mutation
   const analyzeMutation = useMutation({
     mutationFn: async () => {
       if (!jobDescription.trim()) {
         throw new Error("Job description is required");
       }
 
-      // Analyze using the uploads folder where files are stored
       const response = await resumeApi.analyzeJob({
         job_description: jobDescription.trim(),
-        resume_folder: "uploads", // Use the uploads folder
+        resume_folder: "uploads",
         top_n: 10,
       });
 
@@ -59,22 +55,20 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-lightCream to-brand-golden/30">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
       {/* Header */}
-      <header className="sticky top-0 z-50  bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-blue-50/60 shadow-md">
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-blue-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Link
-                to="/"
-                className="flex items-center space-x-2 hover:opacity-80 transition"
-              >
-                <div className="bg-blue-500 rounded-lg p-2">
-                  <Rocket className="h-6 w-6 text-white" />
-                </div>
-                <h1 className="text-xl font-bold text-blue-700">FitFinder</h1>
-              </Link>
-            </div>
+            <Link
+              to="/"
+              className="flex items-center space-x-2 hover:opacity-80 transition"
+            >
+              <div className="bg-blue-600 rounded-lg p-2">
+                <Rocket className="h-6 w-6 text-white" />
+              </div>
+              <h1 className="text-xl font-bold text-blue-700">FitFinder</h1>
+            </Link>
 
             <div className="flex items-center space-x-4">
               <Button
@@ -85,10 +79,10 @@ export default function Dashboard() {
                 <Bell className="h-5 w-5" />
               </Button>
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-blue-300 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-blue-700 text-sm font-medium">HR</span>
+                <div className="w-8 h-8 bg-blue-300 rounded-full flex items-center justify-center shadow">
+                  <span className="text-blue-800 text-sm font-medium">HR</span>
                 </div>
-                <span className="text-sm font-medium text-blue-700">
+                <span className="text-sm font-medium text-blue-800">
                   HR Manager
                 </span>
               </div>
@@ -97,38 +91,36 @@ export default function Dashboard() {
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Upload Section */}
           <div className="lg:col-span-1">
-            <Card className="shadow-xl border-0 bg-white/95 backdrop-blur">
-              <CardHeader className="bg-gradient-to-r from-brand-darkBlue to-brand-mediumBlue text-white rounded-t-lg">
+            <Card className="shadow-xl border border-blue-100 bg-white/90 backdrop-blur">
+              <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-t-lg">
                 <CardTitle className="text-lg font-semibold">
                   Upload CVs & Job Description
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 p-6">
-                {/* Job Description Input */}
                 <div>
-                  <label className="block text-sm font-medium text-brand-darkBlue mb-2">
+                  <label className="block text-sm font-medium text-blue-700 mb-2">
                     Job Description
                   </label>
                   <Textarea
                     placeholder="Paste the job description here..."
                     value={jobDescription}
                     onChange={(e) => setJobDescription(e.target.value)}
-                    className="h-32 resize-none border-gray-200 focus:border-brand-mediumBlue focus:ring-brand-mediumBlue"
+                    className="h-32 resize-none border border-blue-200 focus:border-blue-500 focus:ring-blue-400"
                   />
                 </div>
 
-                {/* File Upload */}
                 <FileUpload />
 
-                {/* Analyze Button */}
                 <Button
                   onClick={handleAnalyze}
                   disabled={analyzeMutation.isPending || !jobDescription.trim()}
-                  className="w-full bg-brand-mediumBlue hover:bg-brand-darkBlue text-white font-medium py-2.5 shadow-lg transition-all duration-200"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 shadow-md transition-all"
                 >
                   <WandSparkles className="mr-2 h-4 w-4" />
                   {analyzeMutation.isPending
@@ -141,7 +133,7 @@ export default function Dashboard() {
 
           {/* Results Section */}
           <div className="lg:col-span-2">
-            <div className="bg-white/95 backdrop-blur rounded-lg shadow-xl border-0">
+            <div className="bg-white/90 backdrop-blur rounded-lg shadow-xl border border-blue-100 p-4">
               <AnalysisResults
                 results={analysisResults}
                 isLoading={analyzeMutation.isPending}
