@@ -172,4 +172,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ⭐ **Star this repo if you find it helpful!**
 
-Built with ❤️ for efficient HR processes and better candidate matching. 
+Built with ❤️ for efficient HR processes and better candidate matching.
